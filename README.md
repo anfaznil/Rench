@@ -3,6 +3,14 @@
 A hands-free appointment scheduler for mechanics and independent service techs, built with
 SwiftUI, SwiftData, WidgetKit, and App Intents (Siri/Shortcuts).
 
+<p align="center">
+  <img src="docs/demo.gif" width="360" alt="Rench app demo — onboarding, adding an appointment, agenda, calendar, and settings">
+</p>
+
+<p align="center">
+  <a href="docs/demo.mp4">Higher-quality MP4 version</a>
+</p>
+
 ## Requirements
 
 - Xcode 16+ (built/tested with Xcode 26, iOS 17.0 minimum deployment target)
