@@ -1,0 +1,114 @@
+name: Rench
+options:
+  bundleIdPrefix: com.rench
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_PREVIEWS: YES
+    ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  Rench:
+    type: application
+    platform: iOS
+    sources:
+      - path: Rench
+      - path: Shared
+    info:
+      path: Rench/Info.plist
+      properties:
+        CFBundleDisplayName: Rench
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: false
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.productivity
+    # NOTE: the iCloud/CloudKit capability is deliberately left OUT of these entitlements for
+    # now. A free/personal Apple ID cannot provision it — Xcode's automatic signing will fail
+    # to build to a real device if it's here and you don't have a paid Apple Developer Program
+    # account. CloudKit sync is already off by default (PersistenceController.cloudKitSyncEnabled
+    # = false), so this doesn't change behavior. Once you have a paid account, add back:
+    #   com.apple.developer.icloud-services: [CloudKit]
+    #   com.apple.developer.icloud-container-identifiers: [iCloud.com.rench.app]
+    # to BOTH this target's and RenchWidgetExtension's entitlements below, then flip
+    # cloudKitSyncEnabled to true. See README.md for the full walkthrough.
+    entitlements:
+      path: Rench/Rench.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.rench.app
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rench.app
+        PRODUCT_NAME: Rench
+        CODE_SIGN_ENTITLEMENTS: Rench/Rench.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: RenchWidgetExtension
+        embed: true
+
+  RenchWidgetExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: RenchWidget
+      - path: Shared
+    info:
+      path: RenchWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Rench
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    # See the matching note on the Rench target above — iCloud/CloudKit intentionally omitted
+    # for now so this builds to a device on a free Apple ID.
+    entitlements:
+      path: RenchWidget/RenchWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.rench.app
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rench.app.widget
+        PRODUCT_NAME: RenchWidget
+        CODE_SIGN_ENTITLEMENTS: RenchWidget/RenchWidget.entitlements
+        SKIP_INSTALL: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
+
+  RenchTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: RenchTests
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rench.app.tests
+
+schemes:
+  Rench:
+    build:
+      targets:
+        Rench: all
+        RenchTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - RenchTests

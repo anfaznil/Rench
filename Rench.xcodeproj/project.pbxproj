@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011634B5B02439186442B8FF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B642DBD911EF91E19E433C /* PersistenceController.swift */; };
+		0160B17E4A12781FBA678E34 /* AppointmentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D2A470EBAE3A6C3E725C5 /* AppointmentFormView.swift */; };
+		077D6545CA9201541EB4148D /* ScheduleForDayIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F37C18EB368514A261EC /* ScheduleForDayIntent.swift */; };
+		0A33559676FEC36E80479D52 /* NotificationContentBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EEF8EAC175EEA72618B6D /* NotificationContentBuilderTests.swift */; };
+		0DCA2032D717B8C10DBD5220 /* AddAppointmentIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE21FE4E231846EF0BD693F /* AddAppointmentIntent.swift */; };
+		172FF422875B830A5CE1310F /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E76AB992B2413F3D138CA /* AppGroup.swift */; };
+		1A6F9290B5604E8983773AB5 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882ACE4ED11FF79CAAB022D /* DateFormatting.swift */; };
+		1A7C4370FBD3C8D318948452 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFADBF3768132587B485932 /* Appointment.swift */; };
+		29F82F41BA97C5ECD7E6A069 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882ACE4ED11FF79CAAB022D /* DateFormatting.swift */; };
+		2DD573641429EC6EE16EA325 /* RenchShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50EE7249EA9A68A080DDA8 /* RenchShortcuts.swift */; };
+		2E386793816184F285E779AE /* AgendaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C9A3705305BBF0CFC636 /* AgendaListView.swift */; };
+		3C366558A13436D7516967A8 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A903847A2A3B21466C26E9 /* RootTabView.swift */; };
+		409198B76B77A4BCC1CD3304 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882ACE4ED11FF79CAAB022D /* DateFormatting.swift */; };
+		43628BCF618DE5658AF521DA /* NotificationContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B827B029C501FB1329C59D3E /* NotificationContentBuilder.swift */; };
+		4CDAF7BC461A420FCE08358C /* ScheduleTodayIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A3451AC7DA040DBEEBD25 /* ScheduleTodayIntent.swift */; };
+		4EFEA928674A6C595A850D01 /* NextAppointmentIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75984158AC4B88F996A58 /* NextAppointmentIntent.swift */; };
+		5886A52208031BFDA0218182 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E76AB992B2413F3D138CA /* AppGroup.swift */; };
+		5DD275F05C896811939EEE85 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CEBBC54268FA58DB6CF78 /* SettingsViewModel.swift */; };
+		5E3AC9A503202E2E2ACB835F /* RenchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E8F52A97A10B8CEF79D2D /* RenchApp.swift */; };
+		5ECCE1D7649DB506C9E9618C /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFADBF3768132587B485932 /* Appointment.swift */; };
+		5EDF55B422854D00A1D4C6D4 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFADBF3768132587B485932 /* Appointment.swift */; };
+		683F246933B184C55623A7CC /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DE9C42950D763FE65F6E2 /* AppSettings.swift */; };
+		6A845E2CED9DE22D4D2F9147 /* SchedulingTriggerDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD5CDE35E4BCB7030646BC /* SchedulingTriggerDateTests.swift */; };
+		6C67D247B9AB606158BA46F7 /* SpokenContentPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB68C2FF7444A732E325 /* SpokenContentPromptView.swift */; };
+		6C903C90137DE8231FFCA06E /* AppointmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D0D41A41EB24E38F840E47 /* AppointmentRow.swift */; };
+		70C4CA357A330472BE27C5CE /* RootContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF27ED39ECCDAC74986B2D /* RootContainerView.swift */; };
+		7489B0114304EFDC094E5125 /* RenchWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD0897DD5B4C327D934F03 /* RenchWidgetViews.swift */; };
+		755716107123F3BAE30BA323 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B642DBD911EF91E19E433C /* PersistenceController.swift */; };
+		7CD0996AC44C7C3C1CEC2A56 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A2B8CF45E3E32738DAC91 /* OnboardingView.swift */; };
+		8287592818F8766758A95931 /* RenchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4CD05A9414EB94C2F7D2C42E /* RenchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		836583A9CAEBFE75E56B2DF8 /* AppointmentQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E021524017A3BDBB1030C60 /* AppointmentQuery.swift */; };
+		8AEEE3F0F681579541BCEDBB /* AppointmentSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A33BBA9634880E4CAE1376 /* AppointmentSummary.swift */; };
+		9019C3C092E8B2D3C65CA4EA /* NotificationContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B827B029C501FB1329C59D3E /* NotificationContentBuilder.swift */; };
+		96212ACFD9D5023C2D88B6C9 /* ShortcutsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4785715336495D4C525278FA /* ShortcutsInfoView.swift */; };
+		9DA56FE1FD3D98F190142858 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DE9C42950D763FE65F6E2 /* AppSettings.swift */; };
+		A78B48889BB9E8B0FE4E143D /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADEE797897644B4182BBF2 /* NotificationScheduler.swift */; };
+		AE9D8D12C69532F3114B86F8 /* AppointmentSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A33BBA9634880E4CAE1376 /* AppointmentSummary.swift */; };
+		B3100FEC0AD7FB7817E0D267 /* NextAppointmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D03DA8272002AA33B1546 /* NextAppointmentProvider.swift */; };
+		B4426554694E8865516E9641 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B642DBD911EF91E19E433C /* PersistenceController.swift */; };
+		C19103C7F7C00C22258C3032 /* NotificationContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B827B029C501FB1329C59D3E /* NotificationContentBuilder.swift */; };
+		CD6A43B0719EF398F3F4BA14 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5EA0E1580C2842CD3D4DB /* SettingsView.swift */; };
+		D2EEC20B0659ED202DBF4A95 /* AppointmentSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A33BBA9634880E4CAE1376 /* AppointmentSummary.swift */; };
+		D682846BA0C706F04D1C921A /* ContactActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5CC96DB4B15F0FEDA421D /* ContactActions.swift */; };
+		D6D921CB2A721C35A4A7B7CD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DE9C42950D763FE65F6E2 /* AppSettings.swift */; };
+		DBB71E6B12104DC6AB843592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC51F4832052E69C839DF4DF /* Assets.xcassets */; };
+		E913F17379CF9F1323CE8DCF /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E76AB992B2413F3D138CA /* AppGroup.swift */; };
+		E91B17B3EF1E775B414F7EB3 /* ScheduleTomorrowIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93724CC705CA3DFF4B18D586 /* ScheduleTomorrowIntent.swift */; };
+		E9285F42E369E8F8CE129BA8 /* RenchWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A3DF02C1803239FB720C1 /* RenchWidgetBundle.swift */; };
+		EFDF1F208CD9876F57F8B096 /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAACDEAD0D96AE5745FA3C1 /* MonthCalendarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA23F6763948300D753C7AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043CB73DDAD1E9877D71E5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E71F9B3D8DA58D69046B843;
+			remoteInfo = RenchWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		146C69B7AA78BC28B6D97057 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8287592818F8766758A95931 /* RenchWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06F5CC96DB4B15F0FEDA421D /* ContactActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactActions.swift; sourceTree = "<group>"; };
+		1DA6ABBF24C7F01AD485BC2B /* Rench.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rench.entitlements; sourceTree = "<group>"; };
+		31AD0897DD5B4C327D934F03 /* RenchWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenchWidgetViews.swift; sourceTree = "<group>"; };
+		3D0CEBBC54268FA58DB6CF78 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		3F6965F9DD6027C3717A3718 /* RenchWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RenchWidget.entitlements; sourceTree = "<group>"; };
+		40D0D41A41EB24E38F840E47 /* AppointmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentRow.swift; sourceTree = "<group>"; };
+		4785715336495D4C525278FA /* ShortcutsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsInfoView.swift; sourceTree = "<group>"; };
+		4ABB49AC473B383C8EEC2632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4CD05A9414EB94C2F7D2C42E /* RenchWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = RenchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EAC8EDB455E3DD490B375C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		657A2B8CF45E3E32738DAC91 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		6E021524017A3BDBB1030C60 /* AppointmentQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentQuery.swift; sourceTree = "<group>"; };
+		7882ACE4ED11FF79CAAB022D /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
+		7BBF27ED39ECCDAC74986B2D /* RootContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerView.swift; sourceTree = "<group>"; };
+		847E76AB992B2413F3D138CA /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		87C5EA0E1580C2842CD3D4DB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		89A903847A2A3B21466C26E9 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		8C28F857C745366BE706CECB /* Rench.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Rench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93724CC705CA3DFF4B18D586 /* ScheduleTomorrowIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTomorrowIntent.swift; sourceTree = "<group>"; };
+		95B642DBD911EF91E19E433C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		96B7CB68C2FF7444A732E325 /* SpokenContentPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenContentPromptView.swift; sourceTree = "<group>"; };
+		97CD5CDE35E4BCB7030646BC /* SchedulingTriggerDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingTriggerDateTests.swift; sourceTree = "<group>"; };
+		98ADEE797897644B4182BBF2 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		A74E8F52A97A10B8CEF79D2D /* RenchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenchApp.swift; sourceTree = "<group>"; };
+		AC50EE7249EA9A68A080DDA8 /* RenchShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenchShortcuts.swift; sourceTree = "<group>"; };
+		B572F37C18EB368514A261EC /* ScheduleForDayIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleForDayIntent.swift; sourceTree = "<group>"; };
+		B827B029C501FB1329C59D3E /* NotificationContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContentBuilder.swift; sourceTree = "<group>"; };
+		BF7EEF8EAC175EEA72618B6D /* NotificationContentBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContentBuilderTests.swift; sourceTree = "<group>"; };
+		BFFADBF3768132587B485932 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		C03A3451AC7DA040DBEEBD25 /* ScheduleTodayIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTodayIntent.swift; sourceTree = "<group>"; };
+		C06D2A470EBAE3A6C3E725C5 /* AppointmentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentFormView.swift; sourceTree = "<group>"; };
+		C21D03DA8272002AA33B1546 /* NextAppointmentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointmentProvider.swift; sourceTree = "<group>"; };
+		DBE21FE4E231846EF0BD693F /* AddAppointmentIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentIntent.swift; sourceTree = "<group>"; };
+		E1A33BBA9634880E4CAE1376 /* AppointmentSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentSummary.swift; sourceTree = "<group>"; };
+		E499C9A3705305BBF0CFC636 /* AgendaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaListView.swift; sourceTree = "<group>"; };
+		F00DE9C42950D763FE65F6E2 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		F19A3DF02C1803239FB720C1 /* RenchWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenchWidgetBundle.swift; sourceTree = "<group>"; };
+		F29F1A4A7110D2777AF9BA8D /* RenchTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RenchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC51F4832052E69C839DF4DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAACDEAD0D96AE5745FA3C1 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+		FDD75984158AC4B88F996A58 /* NextAppointmentIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointmentIntent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		047DD923DAC96B9842D851C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				06F5CC96DB4B15F0FEDA421D /* ContactActions.swift */,
+				98ADEE797897644B4182BBF2 /* NotificationScheduler.swift */,
+				3D0CEBBC54268FA58DB6CF78 /* SettingsViewModel.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14A4ACDA0DAD29C0BA7D5310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C28F857C745366BE706CECB /* Rench.app */,
+				F29F1A4A7110D2777AF9BA8D /* RenchTests.xctest */,
+				4CD05A9414EB94C2F7D2C42E /* RenchWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23196E5598D210400AB13D31 /* Rench */ = {
+			isa = PBXGroup;
+			children = (
+				FC51F4832052E69C839DF4DF /* Assets.xcassets */,
+				64EAC8EDB455E3DD490B375C /* Info.plist */,
+				1DA6ABBF24C7F01AD485BC2B /* Rench.entitlements */,
+				A74E8F52A97A10B8CEF79D2D /* RenchApp.swift */,
+				7BBF27ED39ECCDAC74986B2D /* RootContainerView.swift */,
+				CD6BEBF16A1BBE7DA0B8C7B5 /* Intents */,
+				65E2F633CC1E4C869D14CBFA /* Onboarding */,
+				047DD923DAC96B9842D851C1 /* Services */,
+				56D4E6CFFC62336EE9646FEB /* Settings */,
+				56790AE6A23182E2FCBB4301 /* Views */,
+			);
+			path = Rench;
+			sourceTree = "<group>";
+		};
+		290731F62CD11E2CD764972B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFFADBF3768132587B485932 /* Appointment.swift */,
+				E1A33BBA9634880E4CAE1376 /* AppointmentSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46E967EB04853FC1B648784C /* RenchTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EEF8EAC175EEA72618B6D /* NotificationContentBuilderTests.swift */,
+				97CD5CDE35E4BCB7030646BC /* SchedulingTriggerDateTests.swift */,
+			);
+			path = RenchTests;
+			sourceTree = "<group>";
+		};
+		56790AE6A23182E2FCBB4301 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E499C9A3705305BBF0CFC636 /* AgendaListView.swift */,
+				C06D2A470EBAE3A6C3E725C5 /* AppointmentFormView.swift */,
+				40D0D41A41EB24E38F840E47 /* AppointmentRow.swift */,
+				FCAACDEAD0D96AE5745FA3C1 /* MonthCalendarView.swift */,
+				89A903847A2A3B21466C26E9 /* RootTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56D4E6CFFC62336EE9646FEB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				87C5EA0E1580C2842CD3D4DB /* SettingsView.swift */,
+				4785715336495D4C525278FA /* ShortcutsInfoView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		65E2F633CC1E4C869D14CBFA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				657A2B8CF45E3E32738DAC91 /* OnboardingView.swift */,
+				96B7CB68C2FF7444A732E325 /* SpokenContentPromptView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6E355C0D85792D076E1ECF56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				847E76AB992B2413F3D138CA /* AppGroup.swift */,
+				F00DE9C42950D763FE65F6E2 /* AppSettings.swift */,
+				7882ACE4ED11FF79CAAB022D /* DateFormatting.swift */,
+				B827B029C501FB1329C59D3E /* NotificationContentBuilder.swift */,
+				95B642DBD911EF91E19E433C /* PersistenceController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F1EEA869F8952E7976DCE9F /* RenchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4ABB49AC473B383C8EEC2632 /* Info.plist */,
+				C21D03DA8272002AA33B1546 /* NextAppointmentProvider.swift */,
+				3F6965F9DD6027C3717A3718 /* RenchWidget.entitlements */,
+				F19A3DF02C1803239FB720C1 /* RenchWidgetBundle.swift */,
+				31AD0897DD5B4C327D934F03 /* RenchWidgetViews.swift */,
+			);
+			path = RenchWidget;
+			sourceTree = "<group>";
+		};
+		CD6BEBF16A1BBE7DA0B8C7B5 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				DBE21FE4E231846EF0BD693F /* AddAppointmentIntent.swift */,
+				6E021524017A3BDBB1030C60 /* AppointmentQuery.swift */,
+				FDD75984158AC4B88F996A58 /* NextAppointmentIntent.swift */,
+				AC50EE7249EA9A68A080DDA8 /* RenchShortcuts.swift */,
+				B572F37C18EB368514A261EC /* ScheduleForDayIntent.swift */,
+				C03A3451AC7DA040DBEEBD25 /* ScheduleTodayIntent.swift */,
+				93724CC705CA3DFF4B18D586 /* ScheduleTomorrowIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		D7061D251FB0AB9144C09A32 = {
+			isa = PBXGroup;
+			children = (
+				23196E5598D210400AB13D31 /* Rench */,
+				46E967EB04853FC1B648784C /* RenchTests */,
+				9F1EEA869F8952E7976DCE9F /* RenchWidget */,
+				E2EEE879E2E3703165F7926B /* Shared */,
+				14A4ACDA0DAD29C0BA7D5310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2EEE879E2E3703165F7926B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				290731F62CD11E2CD764972B /* Models */,
+				6E355C0D85792D076E1ECF56 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72B8AEF6FD5BB929C75BEE99 /* Rench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA8A08AD7B34B7F49B727E7 /* Build configuration list for PBXNativeTarget "Rench" */;
+			buildPhases = (
+				CB359A043755BD7E7D117A81 /* Sources */,
+				6AD1132F12632256774AEAE5 /* Resources */,
+				146C69B7AA78BC28B6D97057 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9AA293C4C2F1F6BD93DD2B /* PBXTargetDependency */,
+			);
+			name = Rench;
+			packageProductDependencies = (
+			);
+			productName = Rench;
+			productReference = 8C28F857C745366BE706CECB /* Rench.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E71F9B3D8DA58D69046B843 /* RenchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84665BD68DCFEE7B347D0261 /* Build configuration list for PBXNativeTarget "RenchWidgetExtension" */;
+			buildPhases = (
+				F6C092B2EC5BE852E35A1928 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenchWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = RenchWidgetExtension;
+			productReference = 4CD05A9414EB94C2F7D2C42E /* RenchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A1F2967EE45C1B8EFC8751B7 /* RenchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E325081672531DC4F4F6A286 /* Build configuration list for PBXNativeTarget "RenchTests" */;
+			buildPhases = (
+				D1E183215AF2E6B3613E6931 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenchTests;
+			packageProductDependencies = (
+			);
+			productName = RenchTests;
+			productReference = F29F1A4A7110D2777AF9BA8D /* RenchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043CB73DDAD1E9877D71E5E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					72B8AEF6FD5BB929C75BEE99 = {
+						ProvisioningStyle = Automatic;
+					};
+					7E71F9B3D8DA58D69046B843 = {
+						ProvisioningStyle = Automatic;
+					};
+					A1F2967EE45C1B8EFC8751B7 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 020E7A5384708629A9914CB7 /* Build configuration list for PBXProject "Rench" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D7061D251FB0AB9144C09A32;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 14A4ACDA0DAD29C0BA7D5310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72B8AEF6FD5BB929C75BEE99 /* Rench */,
+				7E71F9B3D8DA58D69046B843 /* RenchWidgetExtension */,
+				A1F2967EE45C1B8EFC8751B7 /* RenchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AD1132F12632256774AEAE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB71E6B12104DC6AB843592 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB359A043755BD7E7D117A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCA2032D717B8C10DBD5220 /* AddAppointmentIntent.swift in Sources */,
+				2E386793816184F285E779AE /* AgendaListView.swift in Sources */,
+				172FF422875B830A5CE1310F /* AppGroup.swift in Sources */,
+				683F246933B184C55623A7CC /* AppSettings.swift in Sources */,
+				5EDF55B422854D00A1D4C6D4 /* Appointment.swift in Sources */,
+				0160B17E4A12781FBA678E34 /* AppointmentFormView.swift in Sources */,
+				836583A9CAEBFE75E56B2DF8 /* AppointmentQuery.swift in Sources */,
+				6C903C90137DE8231FFCA06E /* AppointmentRow.swift in Sources */,
+				D2EEC20B0659ED202DBF4A95 /* AppointmentSummary.swift in Sources */,
+				D682846BA0C706F04D1C921A /* ContactActions.swift in Sources */,
+				1A6F9290B5604E8983773AB5 /* DateFormatting.swift in Sources */,
+				EFDF1F208CD9876F57F8B096 /* MonthCalendarView.swift in Sources */,
+				4EFEA928674A6C595A850D01 /* NextAppointmentIntent.swift in Sources */,
+				C19103C7F7C00C22258C3032 /* NotificationContentBuilder.swift in Sources */,
+				A78B48889BB9E8B0FE4E143D /* NotificationScheduler.swift in Sources */,
+				7CD0996AC44C7C3C1CEC2A56 /* OnboardingView.swift in Sources */,
+				011634B5B02439186442B8FF /* PersistenceController.swift in Sources */,
+				5E3AC9A503202E2E2ACB835F /* RenchApp.swift in Sources */,
+				2DD573641429EC6EE16EA325 /* RenchShortcuts.swift in Sources */,
+				70C4CA357A330472BE27C5CE /* RootContainerView.swift in Sources */,
+				3C366558A13436D7516967A8 /* RootTabView.swift in Sources */,
+				077D6545CA9201541EB4148D /* ScheduleForDayIntent.swift in Sources */,
+				4CDAF7BC461A420FCE08358C /* ScheduleTodayIntent.swift in Sources */,
+				E91B17B3EF1E775B414F7EB3 /* ScheduleTomorrowIntent.swift in Sources */,
+				CD6A43B0719EF398F3F4BA14 /* SettingsView.swift in Sources */,
+				5DD275F05C896811939EEE85 /* SettingsViewModel.swift in Sources */,
+				96212ACFD9D5023C2D88B6C9 /* ShortcutsInfoView.swift in Sources */,
+				6C67D247B9AB606158BA46F7 /* SpokenContentPromptView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E183215AF2E6B3613E6931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5886A52208031BFDA0218182 /* AppGroup.swift in Sources */,
+				9DA56FE1FD3D98F190142858 /* AppSettings.swift in Sources */,
+				1A7C4370FBD3C8D318948452 /* Appointment.swift in Sources */,
+				8AEEE3F0F681579541BCEDBB /* AppointmentSummary.swift in Sources */,
+				29F82F41BA97C5ECD7E6A069 /* DateFormatting.swift in Sources */,
+				9019C3C092E8B2D3C65CA4EA /* NotificationContentBuilder.swift in Sources */,
+				0A33559676FEC36E80479D52 /* NotificationContentBuilderTests.swift in Sources */,
+				755716107123F3BAE30BA323 /* PersistenceController.swift in Sources */,
+				6A845E2CED9DE22D4D2F9147 /* SchedulingTriggerDateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C092B2EC5BE852E35A1928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E913F17379CF9F1323CE8DCF /* AppGroup.swift in Sources */,
+				D6D921CB2A721C35A4A7B7CD /* AppSettings.swift in Sources */,
+				5ECCE1D7649DB506C9E9618C /* Appointment.swift in Sources */,
+				AE9D8D12C69532F3114B86F8 /* AppointmentSummary.swift in Sources */,
+				409198B76B77A4BCC1CD3304 /* DateFormatting.swift in Sources */,
+				B3100FEC0AD7FB7817E0D267 /* NextAppointmentProvider.swift in Sources */,
+				43628BCF618DE5658AF521DA /* NotificationContentBuilder.swift in Sources */,
+				B4426554694E8865516E9641 /* PersistenceController.swift in Sources */,
+				E9285F42E369E8F8CE129BA8 /* RenchWidgetBundle.swift in Sources */,
+				7489B0114304EFDC094E5125 /* RenchWidgetViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C9AA293C4C2F1F6BD93DD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E71F9B3D8DA58D69046B843 /* RenchWidgetExtension */;
+			targetProxy = CA23F6763948300D753C7AB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2018DFFBAF29ADD2973D6132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5CE5FCDA652EC12307693FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RenchWidget/RenchWidget.entitlements;
+				INFOPLIST_FILE = RenchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rench.app.widget;
+				PRODUCT_NAME = RenchWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA10E886E3169401A58A8975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Rench/Rench.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Rench/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rench.app;
+				PRODUCT_NAME = Rench;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE9BE5C849646187FD4057FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RenchWidget/RenchWidget.entitlements;
+				INFOPLIST_FILE = RenchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rench.app.widget;
+				PRODUCT_NAME = RenchWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC01E91F1BEE14D6E254D690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Rench/Rench.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Rench/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rench.app;
+				PRODUCT_NAME = Rench;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF4A41F033DF4182401A1C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rench.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D29CCD277185BA6CC491A3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EAE136EC97079DA1BB2702E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rench.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020E7A5384708629A9914CB7 /* Build configuration list for PBXProject "Rench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29CCD277185BA6CC491A3FC /* Debug */,
+				2018DFFBAF29ADD2973D6132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84665BD68DCFEE7B347D0261 /* Build configuration list for PBXNativeTarget "RenchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5FCDA652EC12307693FCC /* Debug */,
+				AE9BE5C849646187FD4057FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BBA8A08AD7B34B7F49B727E7 /* Build configuration list for PBXNativeTarget "Rench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA10E886E3169401A58A8975 /* Debug */,
+				BC01E91F1BEE14D6E254D690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E325081672531DC4F4F6A286 /* Build configuration list for PBXNativeTarget "RenchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE136EC97079DA1BB2702E8 /* Debug */,
+				BF4A41F033DF4182401A1C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043CB73DDAD1E9877D71E5E2 /* Project object */;
+}
